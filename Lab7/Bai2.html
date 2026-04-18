@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Thao tác thuộc tính: scr; href; value; setAttribute; getAttribute
+    </title>
+  </head>
+  <body>
+    <h1>DOM thao tác với các thuộc tính của phần tử HTML</h1>
+    <h3>Ví dụ: Thay đổi ảnh</h3>
+    <div id="img">
+      <img
+        id="myImage"
+        scr="https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/16/35428890/871679f42798554cd985a8480d680d7d_998551393674105173.png?x-oss-process=image%2Fformat%2Cwebp"
+        width="200"
+      />
+    </div>
+    <button onclick="changeImage()">Thay đổi ảnh</button>
+    <script>
+      function changeImage() {
+        document.getElementById("myImage").src =
+          "https://preview.redd.it/you-guys-think-theres-a-connection-between-raiden-ei-raiden-v0-vgy5xmyqii9d1.jpeg?auto=webp&s=dfe30a8e86062230d4013e87e10ff22d252dbb4f";
+      }
+    </script>
+  </body>
+</html>
